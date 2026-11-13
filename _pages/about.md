@@ -47,7 +47,7 @@ these features line up with conserved motifs and 3D residue contacts.
 
 **BIG-TB: A Benchmark for Prediction and Interpretability of Sequence-Based Machine Learning Using _Mycobacterium tuberculosis_ Genomes**<br>
 M. Tasmin\*, **S. Mohanty**\*, S. Kulkarni, M. R. Farhat, A. G. Green · \*equal contribution<br>
-_bioRxiv preprint, 2026 (under revision)_ · [paper](https://doi.org/10.64898/2026.01.30.702134)
+_bioRxiv preprint, 2026 (in submission)_ · [paper](https://doi.org/10.64898/2026.01.30.702134)
 
 An open benchmark, built with Harvard Medical School, of 17,942 _M. tuberculosis_ genomes with drug-resistance
 phenotypes across 11 antibiotics. We compare biological foundation models (Evo2, ESM-2) with traditional ML, including on
