@@ -1,0 +1,25 @@
+# News items shown on the home page, newest first.
+# `date` is displayed as written; `text` may contain HTML links.
+
+- date: Nov 2026
+  text: >-
+    <span class="hl">Upcoming:</span> presenting a poster on our
+    <a href="https://doi.org/10.64898/2026.08.28.747907">sparse causal features</a> work at
+    <a href="https://www.mlcb.org/">MLCB 2026</a> in New York City (Nov 16–17).
+
+- date: Aug 2026
+  text: >-
+    Gave a talk on our <a href="https://doi.org/10.64898/2026.08.28.747907">sparse causal features</a> work at the
+    <a href="https://ai4d3.github.io/2026northeast/index.html">AI4D3-Northeast 2026</a> workshop on AI for Drug
+    Discovery and Development, NYU Brooklyn.
+
+- date: Sep 2025
+  text: >-
+    Gave a talk on <a href="https://doi.org/10.64898/2026.01.30.702134">BIG-TB</a> at
+    <a href="https://sites.google.com/view/mlcb2025">MLCB 2025</a> in New York City.
+
+- date: Aug 2025
+  text: >-
+    Presented <em>Mechanistic Comparison of Protein Language Models and Profile HMMs for Biological Knowledge
+    Alignment</em> at the <a href="https://nemiconf.github.io/summer25/">New England Mechanistic Interpretability
+    (NEMI) Workshop</a>, Northeastern University, Boston.

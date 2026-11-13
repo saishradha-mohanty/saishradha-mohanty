@@ -10,6 +10,7 @@ Live at <https://saishradha-mohanty.github.io/>.
 | Name, position, email, LinkedIn, lab, menu    | `_config.yml`                 |
 | Color scheme (`forest`, `plum`, `teal`, `slate`) | `palette:` in `_config.yml` |
 | Home page (bio and research)                  | `index.html`                  |
+| News items on the home page                   | `_data/news.yml`              |
 | Awards page                                   | `awards.html`                 |
 | Experience page                               | `experience.html`             |
 | Photo                                         | replace `assets/img/photo.jpg` |

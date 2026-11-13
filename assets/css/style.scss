@@ -160,6 +160,7 @@ ul.timeline > li {
 }
 ul.timeline > li:last-child { border-bottom: 0; }
 ul.timeline.years > li { grid-template-columns: 70px minmax(0, 1fr); }
+ul.timeline.news > li { grid-template-columns: 96px minmax(0, 1fr); padding: 9px 0; }
 ul.timeline .when {
   font-size: 0.84em;
   letter-spacing: 0.045em;
@@ -186,7 +187,7 @@ ul.timeline .note { display: block; color: var(--muted); margin-top: 3px; }
   .page-title { font-size: 1.7em; margin-bottom: 24px; padding-bottom: 18px; }
 }
 @media (max-width: 620px) {
-  ul.timeline > li, ul.timeline.years > li { grid-template-columns: 1fr; gap: 2px; }
+  ul.timeline > li, ul.timeline.years > li, ul.timeline.news > li { grid-template-columns: 1fr; gap: 2px; }
 }
 @media (max-width: 480px) {
   #sitename { font-size: 1.7em; }

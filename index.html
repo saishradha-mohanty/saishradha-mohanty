@@ -38,6 +38,14 @@ layout: default
   </div>
 </div>
 
+<h3>News</h3>
+
+<ul class="timeline news">
+  {%- for item in site.data.news %}
+  <li><span class="when">{{ item.date }}</span><div>{{ item.text }}</div></li>
+  {%- endfor %}
+</ul>
+
 <h3>Research</h3>
 
 <ul class="pubs">
