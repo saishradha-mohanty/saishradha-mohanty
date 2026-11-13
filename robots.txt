@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
 Sitemap: https://saishradha-mohanty.github.io/sitemap.xml
