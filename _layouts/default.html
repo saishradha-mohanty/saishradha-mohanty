@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+  </head>
+  <body data-palette="{{ site.palette | default: 'forest' }}">
+    <div id="masthead">
+      <a id="sitename" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      <nav id="menu">
+        <ul>
+          {%- for item in site.navigation %}
+          {%- assign active = false %}
+          {%- if page.url == item.url or page.url == '/index.html' and item.url == '/' %}{% assign active = true %}{% endif %}
+          <li><a{% if active %} class="active"{% endif %} href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+
+    <main id="content">
+      {%- if page.heading %}
+      <h1 class="page-title">{{ page.heading }}</h1>
+      {%- endif %}
+      {{ content }}
+    </main>
+  </body>
+</html>

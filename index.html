@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{%- assign a = site.author -%}
+<div class="hero">
+  <div class="profile">
+    <img src="{{ a.photo | relative_url }}" alt="{{ a.name }}">
+    <p class="social">
+      <a href="mailto:{{ a.email }}" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="{{ a.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </p>
+    <p class="meta">
+      <strong>{{ a.position }}</strong><br>
+      <a href="{{ a.affiliation_url }}">{{ a.affiliation }}</a>
+    </p>
+    <p class="contact">
+      <span class="lbl">Email:</span> <span class="nowrap">{{ a.email_display }}</span>
+      <span class="lbl">Lab:</span> <a href="{{ a.lab_url }}">{{ a.lab }}</a>
+    </p>
+  </div>
+
+  <div class="lede">
+    <h3>About Me</h3>
+
+    <p>I am a PhD student in Computer Science at the <a href="https://www.cics.umass.edu/">University of Massachusetts Amherst</a>,
+    advised by <a href="https://sage.cs.umass.edu/">Prof. Anna Green</a> in the SAGE Lab. I work on machine learning for
+    computational biology: biological foundation models, protein and genomic sequence modeling, and AI-driven biological
+    discovery, with a particular interest in representation learning and mechanistic interpretability.</p>
+
+    <p>Much of my research is about antimicrobial resistance: predicting drug resistance from bacterial genomes,
+    understanding what protein language models have actually learned, and building agentic systems that help generate and
+    test hypotheses about new resistance mechanisms.</p>
+
+    <p>Before the PhD, I completed an MS in Computer Science at UMass Amherst (2024) and a B.Tech in Computer Science and
+    Engineering at the <a href="https://www.iittp.ac.in/">Indian Institute of Technology Tirupati</a> (2020), where I
+    received the Governor's Medal. In between, I spent two years as a machine learning engineer at Mindbody, building
+    recommender systems and ML infrastructure.</p>
+  </div>
+</div>
+
+<h3>Research</h3>
+
+<ul class="pubs">
+  <li>
+    <div class="ptitle">Towards Sparse Causal Features for Zero-shot Mutation Effect Prediction in a Protein Language Model</div>
+    <div class="pauthors"><span class="me">Saishradha Mohanty</span>, M. Phutela, Anna G. Green</div>
+    <div class="pvenue">bioRxiv preprint, 2026 &middot; <span class="hl">In submission</span></div>
+    <p class="pdesc">A causal feature-discovery framework for ESM-2 that combines sparse autoencoders with activation
+    patching to find the features driving its zero-shot mutation-effect predictions. Across 67 mutations in the DNAJA1
+    protein, sparse circuits made of about 0.2% of the identified features recover model behavior in 88% of cases (15% for
+    baselines), and many of these features line up with conserved motifs and 3D residue contacts.</p>
+    <div class="plinks"><a href="https://doi.org/10.64898/2026.08.28.747907">Preprint</a></div>
+  </li>
+  <li>
+    <div class="ptitle">BIG-TB: A Benchmark for Prediction and Interpretability of Sequence-Based Machine Learning Using <em>Mycobacterium tuberculosis</em> Genomes</div>
+    <div class="pauthors">M. Tasmin*, <span class="me">Saishradha Mohanty</span>*, S. Kulkarni, M. R. Farhat, Anna G. Green &nbsp;<span class="pnote">(* equal contribution)</span></div>
+    <div class="pvenue">bioRxiv preprint, 2026 &middot; <span class="hl">In submission</span></div>
+    <p class="pdesc">An open benchmark, built with Harvard Medical School, of 17,942 <em>M. tuberculosis</em> genomes with
+    drug-resistance phenotypes across 11 antibiotics. We compare biological foundation models (Evo2, ESM-2) with traditional
+    ML, including on held-out lineages, and check model explanations against clinically established resistance mutations.
+    Strong predictive performance turns out not to guarantee biologically faithful explanations.</p>
+    <div class="plinks"><a href="https://doi.org/10.64898/2026.01.30.702134">Preprint</a></div>
+  </li>
+</ul>
