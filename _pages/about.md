@@ -53,10 +53,3 @@ An open benchmark, built with Harvard Medical School, of 17,942 _M. tuberculosis
 phenotypes across 11 antibiotics. We compare biological foundation models (Evo2, ESM-2) with traditional ML, including on
 held-out lineages, and check model explanations against clinically established resistance mutations. Strong predictive
 performance turns out not to guarantee biologically faithful explanations.
-
-**Unifying Themes in Antibiotic Resistance: Towards Improving Predictive Machine Learning Models of Drug Resistance with Cross-Pathogen Insights**<br>
-B. Reimer, H. Poonawala, **S. Mohanty**, A. G. Green<br>
-_In submission to Antimicrobial Agents and Chemotherapy (AAC)_
-
-Examines resistance themes that recur across pathogens and how these cross-pathogen insights can improve machine
-learning models that predict drug resistance.
